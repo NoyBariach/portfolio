@@ -1,0 +1,113 @@
+.bg-white {
+    width: 1920px;
+    height: 1100px;
+
+}
+
+.bg-image {
+    background-image: url(../images/envelope.png);
+    width: 1920px;
+    height: 743px;
+    position: absolute;
+}
+
+@font-face {
+    font-family: rajdhani;
+    src: url(../fonts/Rajdhani-Light.ttf);
+}
+
+@font-face {
+    font-family: fjalla;
+    src: url(../fonts/Fjalla.ttf);
+}
+
+.h1 {
+    font-family: fjalla;
+    color: #ffc107;
+    font-size: 96px;
+    margin-top: 282px;
+    text-align: center;
+}
+
+.p {
+    font-family: rajdhani;
+    color: #fff;
+    font-size: 25px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+form {
+    margin-top: 350px;
+    width: 1000px;
+    height: 74px;
+    margin-left: 25%;
+    display: flex;
+}
+
+.form-control {
+    width: 418px;
+    height: 50px;
+    border-bottom: 4px solid #ffc107;
+    margin-left: 20px;
+}
+
+.btn-warning {
+    width: 166px;
+    height: 50px;
+    color: #011560;
+    margin-left: 20px;
+}
+
+button:hover {
+    background-color: #ffe188;
+}
+
+@media (max-width:576px) {
+    .bg-white {
+        width: 575px;
+        height: 657px;
+        position: absolute;
+    }
+
+    .bg-image {
+        width: 575px;
+        background-image: url(../images/envelope2.png);
+        background-repeat: no-repeat;
+    }
+
+    .text {
+        width: 345px;
+        margin-left: 115px;
+    }
+
+    .h1 {
+        font-size: 38px;
+        margin-top: 100px;
+    }
+
+    .p {
+        font-size: 18px;
+    }
+
+    form {
+        width: 290px;
+        height: 162px;
+        margin-top: 200px;
+        display: block;
+    }
+
+    .form-control {
+        width: 286px;
+        height: 34px;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .btn-warning {
+        grid-area: btn-warning;
+        width: 286px;
+        height: 34px;
+        margin-left: 0;
+    }
+}

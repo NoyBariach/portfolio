@@ -1,0 +1,260 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ .back {
+     width: 1920px;
+     height: 2200px;
+     background-color: #E5EEFF;
+     margin: 0 auto;
+ }
+
+ .container {
+     position: absolute;
+     top: 7%;
+     margin-left: 320px;
+     display: grid;
+     grid-template-columns: repeat(6, 1fr);
+     grid-template-rows: 276px 276px 276px 276px 276px 276px;
+     gap: 20px;
+
+     grid-template-areas:
+         "box1 box2 box3 box3"
+         "box4 box5 box3 box3"
+         "box6 box7 box8 box9"
+         "box10 box10 box11 box12"
+         "box10 box10 box13 box14"
+         "box10 box10 box15 box16";
+ }
+
+ .box1 {
+     grid-area: box1;
+ }
+
+ .box2 {
+     grid-area: box2;
+ }
+
+ .box3 {
+     grid-area: box3;
+     background-color: #020253;
+ }
+
+ .box4 {
+     grid-area: box4;
+ }
+
+ .box5 {
+     grid-area: box5;
+ }
+
+ .box6 {
+     grid-area: box6;
+ }
+
+ .box7 {
+     grid-area: box7;
+ }
+
+ .box8 {
+     grid-area: box8;
+ }
+
+ .box9 {
+     grid-area: box9;
+ }
+
+ .box10 {
+     grid-area: box10;
+     background-color: #8E097C;
+ }
+
+ .box11 {
+     grid-area: box11;
+ }
+
+ .box12 {
+     grid-area: box12;
+ }
+
+ .box13 {
+     grid-area: box13;
+ }
+
+ .box14 {
+     grid-area: box14;
+ }
+
+ .box15 {
+     grid-area: box15;
+ }
+
+ .box16 {
+     grid-area: box16;
+ }
+
+ .form {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #top-headline {
+     margin-top: 200px;
+     color: #0EE1DA;
+     text-align: center;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 45px;
+ }
+
+ #form-headline {
+     margin-top: 80px;
+     color: #fff;
+     text-align: center;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 35px;
+ }
+
+ p {
+     color: #fff;
+     text-align: center;
+     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+     margin-bottom: 100px;
+     line-height: 30px;
+ }
+
+ .form-control {
+     color: #0EE1DA;
+     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+     font-size: 14px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin-left: 50px;
+ }
+
+ .input {
+     background: #E5EEFF no-repeat padding-box;
+     width: 500px;
+     height: 50px;
+     opacity: 1;
+     margin-bottom: 15px;
+     margin-top: 3px;
+     border: 5px solid #E5EEFF;
+     border-bottom: 5px solid #0EE1DA;
+ }
+
+ .message {
+     background: #E5EEFF no-repeat padding-box;
+     width: 500px;
+     height: 170px;
+     opacity: 1;
+     margin-top: 3px;
+     border: 5px solid #E5EEFF;
+     border-bottom: 5px solid #0EE1DA;
+ }
+
+ #send {
+     background-color: #0EE1DA;
+     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+     font-weight: bold;
+     font-size: 20px;
+     color: #011560;
+     border: none;
+     width: 500px;
+     height: 50px;
+     margin-top: 20px;
+     box-shadow: 3px 3px 15px #ffffff29;
+     opacity: 1;
+     margin-left: 50px;
+ }
+
+ #send:hover {
+     background-color: #fff;
+ }
+
+ @media (max-width:395px) {
+     .back {
+         width: 385px;
+         height: 2050px;
+         background-color: #E5EEFF;
+         margin-left: 20px;
+     }
+
+     .container {
+         margin-left: 0px;
+         position: absolute;
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: 159px 159px 159px 159px 159px 159px 159px 159px 159px 159px 159px 159px;
+         gap: 10px;
+
+         grid-template-areas:
+             "box3 box3"
+             "box3 box3"
+             "box1 box2"
+             "box4 box5"
+             "box8 box9"
+             "box6 box7"
+             "box10 box10"
+             "box10 box10"
+             "box10 box10"
+             "box11 box12"
+             "box13 box14"
+             "box15 box16";
+     }
+
+     #top-headline {
+         margin-top: 100px;
+         font-size: 30px;
+     }
+
+     #img {
+         width: 159px;
+         height: 146px;
+         margin-left: 15px;
+     }
+
+     #form-headline {
+         font-size: 27px;
+         margin-top: 35px;
+     }
+
+     #box {
+         width: 385px;
+     }
+
+     #formBox {
+         width: 355px;
+         margin-left: 15px;
+     }
+
+     p {
+         font-size: 13px;
+         margin-bottom: 15px;
+     }
+
+     .form-control {
+         font-size: 14px;
+         margin-left: 23px;
+     }
+
+     .input {
+         width: 278px;
+         height: 33px;
+     }
+
+     .message {
+         width: 278px;
+         height: 96px;
+     }
+
+     #send {
+         width: 278px;
+         height: 33px;
+         margin-left: 23px;
+         font-size: 15px;
+     }
+ }

@@ -1,0 +1,29 @@
+.container {
+    width: $basWidth;
+    height: 800px;
+    background-color: #fff;
+    position: absolute;
+}
+
+.bg-img {
+    background-image: url(../images/lead-you.png);
+    width: $basWidth;
+    height: 450px;
+    position: fixed;
+}
+
+.text {
+    width: $formWidth;
+}
+
+@font-face {
+    font-family: fjalla;
+    src: url(../fonts/Fjalla.ttf);
+}
+
+%basFont {
+    padding-bottom: 30px;
+    text-align: left;
+    margin-left: 40px;
+    color: $textColor;
+}

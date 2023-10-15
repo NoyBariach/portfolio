@@ -1,0 +1,65 @@
+@media (max-width:395px) {
+    .container {
+        width: 390px;
+        height: 658px;
+    }
+
+    .form {
+        width: 299px;
+        height: 441px;
+        margin-top: 90px;
+        margin-left: 40px;
+    }
+
+    .bg-img {
+        width: 390px;
+        height: 213px;
+        position: fixed;
+    }
+
+    .input1,
+    .input2 {
+        width: 230px;
+        height: 28px;
+        margin-bottom: 15px;
+        margin-top: 3px;
+        border: 1px solid #D31C75;
+    }
+
+    .form-control {
+        font-size: 14px;
+        margin-left: 35px;
+    }
+
+    button {
+        width: 50px;
+        height: 28px;
+        background-color: #D31C75;
+        margin-left: 35px;
+        font-size: 15px;
+    }
+
+    .text {
+        width: 230px;
+    }
+
+    @font-face {
+        font-family: fjalla;
+        src: url(../fonts/Fjalla.ttf);
+    }
+
+    h4,
+    p {
+        margin-left: 35px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}

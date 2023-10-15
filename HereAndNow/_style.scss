@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$formWidth: 360px;
+$textColor: #FFFFFF;
+
+.container {
+    width: 1320px;
+    height: 730px;
+    position: absolute;
+    background-image: linear-gradient(#281EFF, #2DFF8C);
+}
+
+%fontStyle {
+    color: $textColor;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h1 {
+    @extend %fontStyle;
+    font-family: 'Dancing Script';
+    font-size: 8rem;
+    padding-top: 220px;
+    padding-bottom: 20px;
+}
+
+h4 {
+    @extend %fontStyle;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    @extend %fontStyle;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}

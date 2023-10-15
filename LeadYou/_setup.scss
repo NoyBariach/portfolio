@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$basWidth: 1320px;
+$titleSize: 2rem;
+$textSize: 1.1rem;
+$textColor: #fff;
+$inputhight: 50px;
+$lableSize: 1rem;
+$formWidth: 370px;
+
+%input {
+    background: #E5EEFF no-repeat padding-box;
+    width: $formWidth;
+    height: 50px;
+    opacity: 1;
+    margin-bottom: 15px;
+    margin-top: 3px;
+    border: 1px solid #D31C75
+}
+
+%form-control {
+    color: $textColor;
+    font-family: arial;
+    font-size: $lableSize;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+}
