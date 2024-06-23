@@ -171,7 +171,7 @@
 
  .projects {
      width: 1920px;
-     height: 900px;
+     height: 1000px;
      top: 981px;
      left: 1px;
      position: absolute;
@@ -223,7 +223,7 @@
      width: 1920px;
      height: 600px;
      left: 1px;
-     top: 1851px;
+     top: 1980px;
      position: absolute;
      display: flex;
      flex-direction: row;
