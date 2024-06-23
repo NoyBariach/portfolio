@@ -10,157 +10,164 @@
 </head>
 
 <body>
-    <nav>
-        <table id="table">
-            <tr>
-                <td><a href="#top">Home page</a></td>
-                <td><a href="#about">About</a></td>
-                <td><a href="#projects">Project gallery</a></td>
-                <td><a href="#contact">contact</a></td>
-            </tr>
-        </table>
-        <div id="nameAndLogo">
+    <div class="potfolio">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <nav>
+            <table id="table">
+                <tr>
+                    <td><a href="#top"><i class="fa fa-fw fa-home"></i>Home page</a></td>
+                    <td><a href="#about"><i class="fa fa-fw fa-info"></i>About</a></td>
+                    <td><a href="#projects"><i class="fa fa-fw fa-photo"></i>gallery<a></td>
+                    <td><a href="#contact"><i class="fa fa-fw fa-envelope"></i>Contact</a></td>
+                </tr>
+            </table>
+            <div id="nameAndLogo">
+                <h4>Noy Bariach</h4>
+                <img src="images/imgNoy.png" alt="Noy" width="80" height="65" id="logoImg">
+            </div>
+        </nav>
+
+        <div class="opening" id="home">
+            <h1>Protfolio</h1>
+            <h4>Hello, welcome to my protfolio web. Here you can see a selection of my projects, I hope you will be
+                impressed by it.
+            </h4><br>
+            <div class="btn-project">
+                <a href="#"><button id="btn">Download the project</button></a>
+            </div>
+        </div>
+
+        <div class="logos">
+            <img src="images/img-SASS.png" alt="SASS" id="logo">
+            <img src="images/img-HTML.png" alt="HTML" id="logo">
+            <img src="images/img-CSS.png" alt="CSS" id="logo">
+            <img src="images/img-bootstrap.png" alt="Bootstrap" id="logo">
+        </div>
+
+        <div class="about" id="about">
+            <img src="images/imgNoy.png" alt="profile" width="250" height="225" id="profile">
+
+            <div class="text">
+                <h2>About myself</h2><br>
+                <p id="aboutMyself">My name is Noy Bariach, I am 27 years old and I live in Petah Tikva.
+                    I am a Full Stack student at 'Hacker U' college.
+                    Originaly Full Stack will not be my first choice, my mother worked at kindergarten and naturlly I
+                    followed her way. After a lot of thinking what I want to do with my life and a lot of searching, I
+                    realized this is what I want to learn and hopefully to become a full stack developer.
+                </p><br>
+                <div class="btn">
+                    <a href="קורות חיים נוי בריח.pdf"><button id="btn">Download my resume</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="projects" id="projects">
+            <h2>Selected projects</h2><br>
+            <h4>These are the projects I created, in each project I used the tools that we have learned.</h4><br>
+            <div class="container">
+                <div class="item box1"><img src="images/discover world.png" alt="discover" height="150" width="205"
+                        id="img">
+                    <h4>Discover World</h4>
+                    <p>HTML+CSS
+                    </p><a href="../Project1/discoverWorld/discoverWorld.html"><button id="btn">Click to the
+                            project</button></a>
+                </div>
+
+
+                <div class="item box2"><img src="images/free consultation.png" alt="consultation" height="150"
+                        width="205" id="img">
+                    <h4>Free Consultation</h4>
+                    <p>HTML+CSS
+                    </p><a href="../Project1/freeConsultatio/freeConsultatio.html"><button id="btn">Click to the
+                            project</button></a>
+                </div>
+
+
+
+                <div class="item box3"><img src="images/outsideTheBox.png" alt="box" height="150" width="205" id="img">
+                    <h4>Outside The Box</h4>
+                    <p>HTML+CSS
+
+                    </p><a href="../Project1/outsideTheBox/outsideTheBox.html"><button id="btn">Click to the
+                            project</button></a>
+                </div>
+
+
+
+                <div class="item box4"><img src="images/leadYou.png" alt="lead" height="150" width="205" id="img">
+                    <h4>Lead You</h4>
+                    <p>SASS
+                    </p><a href="../Project1/leadYou/leadYou.html"><button id="btn">Click to the project</button></a>
+                </div>
+
+
+
+                <div class="item box5"><img src="images/here&now.png" alt="here" height="150" width="205" id="img">
+                    <h4>Here & Now</h4>
+                    <p>SASS
+                    </p><a href="../Project1/HereAndNow/hereAndNow.html"><button id="btn">Click to the
+                            project</button></a>
+                </div>
+
+
+
+                <div class="item box6"><img src="images/leadYou2.png" alt="lead You 2" height="150" width="205"
+                        id="img">
+                    <h4>Lead You 2</h4>
+                    <p>bootstrap</p><a href="../Project1/leadYou2/leadYou2.html"><button id="btn">Click to the
+                            project</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <img src="images/contactUs.png" alt="contactUs">
+            <form>
+                <h2 id="form-headline">Contact us</h2>
+
+                <p id="form-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+
+                <div class="form-control">
+                    <label>full name</label>
+                    <input class="input"></input>
+                </div>
+
+                <div class="form-control">
+                    <label>e-mail</label>
+                    <input class="input"></input>
+                </div>
+
+                <div class="form-control">
+                    <label>phone number</label>
+                    <input class="input"></input>
+                </div>
+
+                <div class="form-control">
+                    <label>your message</label>
+                    <input class="message"></input>
+                </div>
+
+                <div class="form-control-btn">
+                    <button id="send">Send</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="icons">
+            <img src="images/icon-location.png" alt="location" id="icon">
+            <img src="images/icon-mail.png" alt="mail" id="icon">
+            <img src="images/icon-whatsapp.png" alt="whatsapp" id="icon">
+            <img src="images/icon-phone.png" alt="phone" id="icon">
+            <img src="images/icon-linkedin.png" alt="linkedin" id="icon">
+            <img src="images/icon-facebook.png" alt="facebook" id="icon">
+        </div>
+
+        <div class="credit">
             <h4>Noy Bariach</h4>
-            <img src="images/img-Noy.png" alt="Noy" width="80" height="65" id="logoImg">
+            <p>all rights reserved</p>
         </div>
-    </nav>
-
-    <div class="opening" id="home">
-        <h1>Protfolio</h1>
-        <h4>Hello, welcome to my protfolio web. Here you can see a selection of my projects, I hope you will be
-            impressed by it.
-        </h4><br>
-        <div class="btn-project">
-            <a href="#"><button id="btn">Download the project</button></a>
-        </div>
-    </div>
-
-    <div class="logos">
-        <img src="images/img-SASS.png" alt="SASS" id="logo">
-        <img src="images/img-HTML.png" alt="HTML" id="logo">
-        <img src="images/img-CSS.png" alt="CSS" id="logo">
-        <img src="images/img-bootstrap.png" alt="Bootstrap" id="logo">
-    </div>
-
-    <div class="about" id="about">
-        <img src="images/img-NoyBig.png" alt="profile" width="250" height="225" id="profile">
-
-        <div class="text">
-            <h2>About myself</h2><br>
-            <p id="aboutMyself">My name is Noy Bariach, I am 27 years old and I live in Petah Tikva.
-                I am a Full Stack student at 'Hacker U' college.
-                Originaly Full Stack will not be my first choice, my mother worked at kindergarten and naturlly I
-                followed her way. After a lot of thinking what I want to do with my life and a lot of searching, I
-                realized this is what I want to learn and hopefully to become a full stack developer.
-            </p><br>
-            <div class="btn">
-                <a href="קורות חיים נוי בריח.pdf"><button id="btn">Download my resume</button></a>
-            </div>
-        </div>
-    </div>
-    <div class="projects" id="projects">
-        <h2>Selected projects</h2><br>
-        <h4>These are the projects I created, in each project I used the tools that we have learned.</h4><br>
-        <div class="container">
-            <div class="item box1"><img src="images/discover world.png" alt="discover" height="150" width="205"
-                    id="img">
-                <h4>Discover World</h4>
-                <p>HTML+CSS
-                </p><a href="../Project1/discoverWorld/discoverWorld.html"><button id="btn">Click to the
-                        project</button></a>
-            </div>
-
-
-            <div class="item box2"><img src="images/free consultation.png" alt="consultation" height="150" width="205"
-                    id="img">
-                <h4>Free Consultation</h4>
-                <p>HTML+CSS
-                </p><a href="../Project1/freeConsultatio/freeConsultatio.html"><button id="btn">Click to the
-                        project</button></a>
-            </div>
-
-
-
-            <div class="item box3"><img src="images/outsideTheBox.png" alt="box" height="150" width="205" id="img">
-                <h4>Outside The Box</h4>
-                <p>HTML+CSS
-
-                </p><a href="../Project1/outsideTheBox/outsideTheBox.html"><button id="btn">Click to the
-                        project</button></a>
-            </div>
-
-
-
-            <div class="item box4"><img src="images/leadYou.png" alt="lead" height="150" width="205" id="img">
-                <h4>Lead You</h4>
-                <p>SASS
-                </p><a href="../Project1/leadYou/leadYou.html"><button id="btn">Click to the project</button></a>
-            </div>
-
-
-
-            <div class="item box5"><img src="images/here&now.png" alt="here" height="150" width="205" id="img">
-                <h4>Here & Now</h4>
-                <p>SASS
-                </p><a href="../Project1/HereAndNow/hereAndNow.html"><button id="btn">Click to the project</button></a>
-            </div>
-
-
-
-            <div class="item box6"><img src="images/leadYou2.png" alt="lead You 2" height="150" width="205" id="img">
-                <h4>Lead You 2</h4>
-                <p>bootstrap</p><a href="../Project1/leadYou2/leadYou2.html"><button id="btn">Click to the
-                        project</button></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="contact" id="contact">
-        <img src="images/contactUs.png" alt="contactUs">
-        <form>
-            <h2 id="form-headline">Contact us</h2>
-
-            <p id="form-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            </p>
-
-            <div class="form-control">
-                <label>full name</label>
-                <input class="input"></input>
-            </div>
-
-            <div class="form-control">
-                <label>e-mail</label>
-                <input class="input"></input>
-            </div>
-
-            <div class="form-control">
-                <label>phone number</label>
-                <input class="input"></input>
-            </div>
-
-            <div class="form-control">
-                <label>your message</label>
-                <input class="message"></input>
-            </div>
-
-            <div class="form-control-btn">
-                <button id="send">Send</button>
-            </div>
-        </form>
-    </div>
-
-    <div class="icons">
-        <img src="images/icon-location.png" alt="location" id="icon">
-        <img src="images/icon-mail.png" alt="mail" id="icon">
-        <img src="images/icon-whatsapp.png" alt="whatsapp" id="icon">
-        <img src="images/icon-phone.png" alt="phone" id="icon">
-        <img src="images/icon-linkedin.png" alt="linkedin" id="icon">
-        <img src="images/icon-facebook.png" alt="facebook" id="icon">
-    </div>
-
-    <div class="credit">
-        <h4>Noy Bariach</h4>
-        <p>all rights reserved</p>
     </div>
 </body>
 

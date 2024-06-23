@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test-style.css">
+    <script src="test-script.js" defer></script>
+    <title>בונה מסכים</title>
+</head>
+
+<body>
+    <div id="frame">
+        <div id="panelSide">
+            <h1>בונה מסכים</h1>
+
+            <nav>
+                <a class="active" onclick="pageToShow('settings', this)">עיצוב כללי</a>
+                <a onclick="pageToShow('elements', this)">אלמנטים</a>
+            </nav>
+
+            <div id="settings" class="show">
+                <div id="patternArea" class="field">
+                    <label>תבנית</label>
+                    <label id="patternAreaRequired" class="requiredElement">*שדה חובה</label>
+                    <select id="pattern" required>
+                        <option value="choose pattern">בחר תבנית</option>
+                        <option value="Page">Page</option>
+                        <option value="Layout">Layout</option>
+                    </select>
+                    <button onclick="selectedPattern()">החל תבנית</button>
+                </div>
+                <div id="BgAndPaddingAreaRequired">
+                    <div class="field">
+                        <label>רקע לאתר</label>
+                        <input type="color" oninput="bgChange(this)">
+                    </div>
+
+                    <div class="field">
+                        <label>ריווח פנימי של הדף</label>
+                        <input type="number" value="16" oninput="paddingChange(this)" min="0" max="50">
+
+                    </div>
+                </div>
+                <button onclick="removePage()">מחק דף</button>
+            </div>
+
+            <div id="elements">
+                <div class="field">
+                    <label>סוג אלמנט</label>
+                    <select oninput="typeSelect(this)">
+                        <option value="null">בחר סוג אלמנט</option>
+                        <option value="title">כותרת</option>
+                        <option value="p">פסקה</option>
+                        <option value="input">תיבת קלט</option>
+                        <option value="button">לחצן</option>
+                        <option value="img">מדיה</option>
+                        <option value="a">קישור</option>
+                    </select>
+                </div>
+                <div id="params">
+                    <div id="headerType" class="field">
+                        <label>סוג כותרת</label>
+                        <select>
+                            <option>h1</option>
+                            <option>h2</option>
+                            <option>h3</option>
+                            <option>h4</option>
+                            <option>h5</option>
+                            <option>h6</option>
+                        </select>
+                    </div>
+                    <div id="gridType" class="field">
+                        <label>סוג אזור</label>
+                        <label id="chooseAreaRequired" class="requiredElement">*שדה חובה</label>
+                        <select id="chooseArea" required>
+                            <option value="chooseArea">בחר אזור</option>
+                            <option value="Header">Header</option>
+                            <option value="Left">Left</option>
+                            <option value="Middle">Middle</option>
+                            <option value="Right">Right</option>
+                            <option value="Footer">Footer</option>
+                        </select>
+                    </div>
+
+                    <div id="inputType" class="field">
+                        <label>סוג קלט</label>
+                        <select>
+                            <option value="text">טקסט</option>
+                            <option value="date">תאריך</option>
+                            <option value="time">שעה</option>
+                        </select>
+                    </div>
+                    <div id="mediaType" class="field">
+                        <label>סוג המדיה</label>
+                        <select>
+                            <option value="image">תמונה</option>
+                            <option value="video">וידאו</option>
+                        </select>
+                    </div>
+
+                    <div id="fontSize" class="field">
+                        <label>גודל הטקסט</label>
+                        <input value="12" type="number">
+                    </div>
+
+                    <div id="color" class="field">
+                        <label>צבע טקסט</label>
+                        <input type="color">
+                    </div>
+
+                    <div id="content" class="field">
+                        <label>תוכן</label>
+                        <label id="contentInputRequired" class="requiredElement">*שדה חובה</label>
+                        <input id="contentInput" type="text">
+                    </div>
+
+                    <div id="background" class="field">
+                        <label>רקע</label>
+                        <input type="color">
+                    </div>
+
+                    <div id="height" class="field">
+                        <label>גובה</label>
+                        <input value="400" type="number">
+                    </div>
+
+                    <div id="width" class="field">
+                        <label>רוחב</label>
+                        <input value="300" type="number">
+                    </div>
+
+                    <div id="linkN" class="field">
+                        <label>שם הקישור</label>
+                        <label id="EnterlinkNameRequired" class="requiredElement">*שדה חובה</label>
+                        <input id="EnterlinkName">
+                    </div>
+
+                    <div id="linkUrl" class="field">
+                        <label>הכנס קישור</label>
+                        <label id="EnterUrlRequired" class="requiredElement">*שדה חובה</label>
+                        <input id="EnterUrl">
+                    </div>
+                </div>
+
+                <button onclick="add()">הוסף</button>
+                <button onclick="removePage()">מחק דף</button>
+            </div>
+        </div>
+
+        <div id="main">
+            <div id="page" contenteditable="true">
+                <div id="isLayout">
+
+                    <div id="header" class="header">
+                    </div>
+
+                    <div class="mainContent">
+                        <div id="left" class="side-bar-left">
+                        </div>
+                        <div id="middle" class="middle">
+                        </div>
+                        <div id="right" class="side-bar-right">
+                        </div>
+                    </div>
+
+                    <div id="footer" class="footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

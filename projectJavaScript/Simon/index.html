@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="simon-game">
+        <h1>Simon Game</h1>
+        <div class="controls">
+            <button class="btn" id="green" onclick="handleClick(this)" disabled></button>
+            <button class="btn" id="red" onclick="handleClick(this)" disabled></button>
+            <button class="btn" id="yellow" onclick="handleClick(this)" disabled></button>
+            <button class="btn" id="blue" onclick="handleClick(this)" disabled></button>
+        </div>
+        <div class="info">
+            <h2 id="message">Press Start to Play<h2>
+                    <div id="counter"></div>
+                    <button class="input wave waveA" id="start-btn">Start</button>
+                    <button class="input wave waveA" id="restart-btn" class='hidden'>Restart</button>
+                    <div id="strictModeArea" class="info">
+                        <label for="strict-mode" id="strict-mode">Strict Mode</label>
+                        <input type="checkbox" id="strict-mode" onchange="toggleStrictMode()">
+                    </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
